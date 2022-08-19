@@ -1,0 +1,27 @@
+{
+    "id": "1BCD96E4",
+    "path": "~/Desktop/Imperial/covid/new_project_antivirals/R_projects/drugresistance/Analyses/run_model1.R",
+    "project_path": "Analyses/run_model1.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1660051031053.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "45,19",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1660147754,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1660147754198,
+    "read_only": false,
+    "read_only_alternatives": []
+}
