@@ -35,17 +35,11 @@ model2=function(t, x, model_parameters){
     # these come from the model equations.  The following equations are for
     # an SITR model.  When you write your own function, replace these with
     # your model equations
-    #dIw = +S/npop*( beta_w*(Iw + delta*Tw) ) -alpha*Iw -gamma_w*Iw
-    #dS = -S/npop*( beta_w*(Iw + delta*Tw) +beta_r*(Ir + Tr) )
-    #dTw = +alpha*Iw - phi*Tw -eta*Tw
-    #dIr = +S/npop*( beta_r*(Ir + Tr) ) -alpha*Ir -gamma_r*Ir
-    #dTr = +alpha*Ir + phi*Tw - gamma_r*Tr
-    #dR = +gamma_w*Iw + gamma_r*Ir + eta*Tw +gamma_r*Tr
 
-    dS = -S*( beta_w*(Iw + delta*Tw) +beta_r*(Ir + Tr) )
-    dIw = +S*( beta_w*(Iw + delta*Tw) ) -alpha*Iw -gamma_w*Iw
+    dS = -S/npop*( beta_w*(Iw + delta*Tw) +beta_r*(Ir + theta*Tr) )
+    dIw = +S/npop*( beta_w*(Iw + delta*Tw) ) -alpha*Iw -gamma_w*Iw
     dTw = +alpha*Iw - phi*Tw -eta*Tw
-    dIr = +S*( beta_r*(Ir + Tr) ) -alpha*Ir -gamma_r*Ir
+    dIr = +S/npop*( beta_r*(Ir + theta*Tr) ) -alpha*Ir -gamma_r*Ir
     dTr = +alpha*Ir + phi*Tw - gamma_r*Tr
     dR = +gamma_w*Iw + gamma_r*Ir + eta*Tw +gamma_r*Tr
 

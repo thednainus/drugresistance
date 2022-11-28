@@ -42,7 +42,9 @@ gamma_r = 1/5
 alpha = 0.0000005 #rate to start treatment ( I think this will be dependent on
 # the population size of I)
 phi = 14 #rate to develop drug-resistant mutations (see my notes)
-delta = 0.05 #decrease on infectivity (let's say it will descrese infectivity by half)
+delta = 0.5 #decrease on infectivity (let's say it will decrease infectivity by half)
+theta = 0.8 #decrease on infectivity because individuals on treatment will
+            #possibly be on isolation
 
 eta = 1/5 #recovery rate in Tw (see notes)
 
